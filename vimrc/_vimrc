@@ -1,0 +1,25 @@
+set nu
+set hlsearch
+set ruler
+set showmode
+syntax on
+set nocompatible
+set ru
+set confirm
+set history=100
+set cursorline
+set laststatus=2
+set statusline=%4*%<\%m%<[%f\%r%h%w]\ [%{&ff},%{&fileencoding},%Y]%=\[Position=%l,%v,%p%%]
+
+set tabpagemax=100
+
+map <C-n> :tabnext <CR>
+nmap <C-t> :tabnew . <CR>
+
+
+"fun SetupVAM()
+" set runtimepath+=/.vim/addons/vim-addon-manager
+" call vam#ActivateAddons(['a.vim_-Alternate_Files_quickly_.c','taglist',])
+"endf
+"call SetupVAM()
+

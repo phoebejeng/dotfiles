@@ -1,0 +1,7 @@
+alias ls="ls -aG"
+alias ll="ls -laG"
+alias atttmux="tmux -S ~/phoebe_socket attach"
+alias gettmux="tmux attach -t"
+alias lstmux="tmux ls"
+alias cls="clear"
+
