@@ -11,4 +11,5 @@ do
     cd ..
     echo ""
 done
+echo "End setup"
 
