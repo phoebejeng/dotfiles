@@ -22,11 +22,15 @@ set backspace=indent,eol,start
 filetype off
 filetype plugin indent on
 
-"set ru
 set confirm
 set history=100
 set laststatus=2 "Powerline need.
 set statusline=%4*%<\%m%<[%f\%r%h%w]\ [%{&ff},%{&fileencoding},%Y]%=\[Position=%l,%v,%p%%]
+
+set expandtab
+set autoindent
+set tabstop=4
+set shiftwidth=4
 
 set tabpagemax=100
 
@@ -44,9 +48,9 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'Lokaltog/vim-powerline'
 
-set cursorline
-highlight CursorLine term=bold cterm=NONE ctermbg=darkyellow guibg=darkred guifg=white
-highlight CursorColumn cterm=NONE ctermbg=white ctermfg=white guibg=darkred guifg=white
+"set cursorline
+"highlight CursorLine term=bold cterm=NONE ctermbg=darkyellow guibg=darkred guifg=white
+"highlight CursorColumn cterm=NONE ctermbg=white ctermfg=white guibg=darkred guifg=white
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
