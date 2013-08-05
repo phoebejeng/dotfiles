@@ -14,5 +14,7 @@ function parse_git_branch {
 
 PS1="\u@${BASH_LIGHT_GREEN}\h${BASH_WHITE} [${BASH_CYAN}\w${BASH_WHITE}] [$(date +%H:%M:%S)] ${BASH_YELLOW}\$(parse_git_branch)${BASH_WHITE}";
 
+export LANG=zh_TW.UTF-8
+
 source ~/.bashrc
 
