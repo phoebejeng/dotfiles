@@ -8,4 +8,5 @@ alias lstmux="tmux ls"
 alias cls="clear"
 
 alias wgetssh="wget --user phoebejeng --ask-password --no-check-certificate"
+alias grep="greop --color=auto"
 
