@@ -1,11 +1,9 @@
-echo "====== irssi ======"
+echo "====== <irssi> ======"
 currentPath=`pwd`
 
-echo "Check config file..."
+echo "Remove config files..."
+rm ~/.irssi/config
 
-ls ~/_backup_config || mkdir ~/_backup_config
-find ~/.irssi/config && mv ~/.irssi/config ~/_backup_config/irssi_config
-
-echo "Set symbolic link: ${currentPath}/config to ~/.irssi/config"
+echo "Set symbolic link..."
 ln -s ${currentPath}/config ~/.irssi/config
-echo "==== Setup end ===="
+echo "==== Setup <irssi> end ===="
