@@ -1,11 +1,9 @@
-echo "====== tmux ======"
+echo "====== <tmux> ======"
 currentPath=`pwd`
 
-echo "Check config file..."
+echo "Remove config files..."
+rm ~/.tmux.conf
 
-ls ~/_backup_config || mkdir ~/_backup_config
-find ~/.tmux.conf && mv ~/.tmux.conf ~/_backup_config/_tmux.conf
-
-echo "Set symbolic link: ${currentPath}/_tmux.conf to ~/.tmux.conf"
+echo "Set symbolic link..."
 ln -s ${currentPath}/_tmux.conf ~/.tmux.conf
-echo "==== Setup end ===="
+echo "==== Setup <tmux> end ===="
