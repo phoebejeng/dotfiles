@@ -1,18 +1,13 @@
-echo "====== vim ======"
+echo "====== <vim> ======"
 currentPath=`pwd`
 
-echo "Check config file..."
-ls ~/_backup_config || mkdir ~/_backup_config
-find ~/.vimrc && mv ~/.vimrc ~/_backup_config/_vimrc
+echo "Remove config files..."
+rm ~/.vimrc
+rm -rf ~/.vim
 
-find ~/.vim && cp -r ~/.vim ~/_backup_config/_vim && rm -rf ~/.vim
-
-echo "Set symbolic link: ${currentPath}/_vimrc"
+echo "Set symbolic link..."
 ln -s ${currentPath}/_vimrc ~/.vimrc
 
-echo "Set symbolic link: ${currentPath}/_vim"
-ln -s ${currentPath}/_vim ~/.vim
-
-echo "==== Setup end ===="
-
-
+echo "Install 'vundle'..."
+find ~/.vim/bundle/vundle || git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+echo "==== Setup <vim> end ===="
