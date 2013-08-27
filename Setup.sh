@@ -1,4 +1,3 @@
-echo "Start setup..."
 allSh=`ls */Setup.sh | tr " " "\n"`
 
 for i in $allSh
@@ -11,5 +10,3 @@ do
     cd ..
     echo ""
 done
-echo "End setup"
-
