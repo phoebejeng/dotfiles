@@ -9,4 +9,5 @@ alias cls="clear"
 
 alias wgetssh="wget --user phoebejeng --ask-password --no-check-certificate"
 alias grep="grep --color=auto"
-
+alias tojson="python -mjson.tool"
+alias connmysql="mysql -h db-kdb-2 -u mytop -p"
