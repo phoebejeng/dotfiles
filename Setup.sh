@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 allSh=`ls */Setup.sh | tr " " "\n"`
 
 for i in $allSh
