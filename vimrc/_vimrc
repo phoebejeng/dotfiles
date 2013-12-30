@@ -35,6 +35,7 @@ set shiftwidth=4
 set tabpagemax=100
 
 map <C-n> :tabnext <CR>
+map <C-p> :tabp <CR>
 nmap <C-t> :tabnew . <CR>
 
 " Vundle
