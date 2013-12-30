@@ -16,6 +16,9 @@ PS1="\u@${BASH_LIGHT_GREEN}\h${BASH_WHITE} [${BASH_CYAN}\w${BASH_WHITE}] [$(date
 
 export LC_ALL=zh_TW.UTF-8
 export LANG=zh_TW.UTF-8
-
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYTHONPATH="$HOME/bin"
+eval "$(pyenv init -)"
 source ~/.bashrc
-
+source ~/.pyenv/completions/pyenv.bash
