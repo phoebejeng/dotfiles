@@ -26,6 +26,8 @@ set confirm
 set history=100
 set laststatus=2 "Powerline need.
 set statusline=%4*%<\%m%<[%f\%r%h%w]\ [%{&ff},%{&fileencoding},%Y]%=\[Position=%l,%v,%p%%]
+let g:Powerline_symbols = "unicode"
+
 
 set expandtab
 set autoindent
@@ -49,11 +51,13 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'Lokaltog/vim-powerline'
 
+Bundle 'Shutnik/jshint2.vim'
+
+Bundle 'wincent/Command-T'
+
 "set cursorline
 "highlight CursorLine term=bold cterm=NONE ctermbg=darkyellow guibg=darkred guifg=white
 "highlight CursorColumn cterm=NONE ctermbg=white ctermfg=white guibg=darkred guifg=white
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
-
-
