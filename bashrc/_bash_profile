@@ -12,7 +12,7 @@ function parse_git_branch {
 }
 
 
-PS1="\u@${BASH_LIGHT_GREEN}\h${BASH_WHITE} [${BASH_CYAN}\w${BASH_WHITE}] [$(date +%H:%M:%S)] ${BASH_YELLOW}\$(parse_git_branch)${BASH_WHITE}";
+PS1="\u@${BASH_LIGHT_GREEN}\h${BASH_WHITE} [${BASH_CYAN}\w${BASH_WHITE}] ${BASH_YELLOW}\$(parse_git_branch)${BASH_WHITE}";
 
 export LC_ALL=zh_TW.UTF-8
 export LANG=zh_TW.UTF-8
@@ -22,3 +22,8 @@ export PYTHONPATH="$HOME/bin"
 eval "$(pyenv init -)"
 source ~/.bashrc
 source ~/.pyenv/completions/pyenv.bash
+
+# POWERLINE_PATH=/.amd_mnt/account/users/phoebejeng/.pyenv/versions/2.7.5/lib/python2.7/site-packages/Powerline-beta-py2.7.egg/powerline/bindings/bash/powerline.sh
+# if [ -f $POWERLINE_PATH ]; then
+#     source $POWERLINE_PATH
+# fi
